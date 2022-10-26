@@ -17,7 +17,7 @@ export default async function PersonLayout({
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
       <nav style={{ display: "flex", flexDirection: "column" }}>
-        {data.results.map((i) => (
+        {data.results.map((i: any) => (
           <Link
             key={i.name}
             href={`/person/${i.url.split("/")[i.url.split("/").length - 2]}`}

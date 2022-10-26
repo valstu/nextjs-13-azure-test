@@ -5,7 +5,7 @@ async function getData(id: string) {
   return res.json();
 }
 
-export default async function Page({ params }: { params: { id: string } }) {
+export default async function Page({ params }: any) {
   // console.log(props);
   const data = await getData(params.id);
 
